@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Journey into Web Development</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt=" Logo Icon" width="20" />
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>My bolg</li>
+          <li>My work</li>
+          <li>Testimonials</li>
+          <li>About me</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <section>
+          <h2>Featured Video</h2>
+
+          <h3>HTML5 Video Tag (Homework)</h3>
+          <video
+            controls
+            width="640"
+            height="360"
+            poster="https://placehold.co/640x360/000000/ffffff?text=Video+Thumbnail"
+            preload="metadata"
+          >
+            <source
+              src="https://www.pexels.com/download/video/35187779/"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <p>
+            I selected the "metadata" preload value for this video. I chose this
+            because it ensures the browser only fetches basic information (like
+            dimensions and video length) when the page loads, rather than
+            downloading the entire video file immediately, which saves user
+            bandwidth and improves page load times.
+          </p>
+
+          <h3>YouTube Embed</h3>
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/mV_LG51IT9k"
+            title="The Philosophy of Batman"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+        <section>
+          <h2>Status Board</h2>
+          <p>
+            <span role="img" aria-label="green check mark">✅</span> Task
+            completed: All initial code is written.
+          </p>
+          <p>
+            <span role="img" aria-label="globe with meridians">🌐</span> Website
+            published: The homepage is now live.
+          </p>
+          <p>
+            <span role="img" aria-label="warning sign">⚠️</span> Warning: Image
+            sizes are too large and need compression.
+          </p>
+          <p>
+            <span role="img" aria-label="light bulb">💡</span> New idea: Let's
+            add a dark mode feature next week.
+          </p>
+          <p>
+            <span role="img" aria-label="rocket">🚀</span> Launch: Version 1.0
+            has been deployed to the main server!
+          </p>
+        </section>
+        <section>
+          <h2>Character Entities</h2>
+          <p>This is the copyright symbol: &copy;</p>
+          <p>This is the registered trademark symbol: &reg;</p>
+          <p>This is the trademark symbol: &trade;</p>
+          <p>This is the euro sign: &euro;</p>
+          <p>These are the less-than &lt; and greater-than &gt; symbols.</p>
+          <p>This is a named entity for a heart: &hearts;</p>
+          <p>This is a hexadecimal Unicode code for a music note: &#x266B;</p>
+          <p>
+            To create a simple HTML page, you wrap your content in an
+            &lt;html&gt; tag. Inside, you use the &lt;body&gt; tag to hold the
+            visible content. You can then use tags like &lt;h1&gt; for main
+            headings and &lt;p&gt; for standard paragraphs.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <img src="./images/logo.svg" alt="Saviour Care Logo Icon" width="20" />
+      <h3>privet blog</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa.
+      </p>
+      <p>&copy;. All rights reserved</p>
+
+      <h3>site link</h3>
+      <ul>
+        <li>Home</li>
+        <li>My bolg</li>
+        <li>My work</li>
+        <li>Testimonials</li>
+        <li>About me</li>
+      </ul>
+      <address>
+        majeed<br />
+        majeed@example.com<br />
+        +1 (555) 123-4567<br />
+        riyadh, KSA
+      </address>
+    </footer>
+  </body>
+</html>
