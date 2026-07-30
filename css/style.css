@@ -92,3 +92,34 @@ footer p {
   padding-top: 15px;
   margin-top: 40px;
 }
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+}
+.features {
+  display: flex;
+  justify-content: center;
+}
+.feature-text {
+  display: inline-block;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.card {
+
+
+  flex-basis: calc((100% - 40px) / 3);
+}
