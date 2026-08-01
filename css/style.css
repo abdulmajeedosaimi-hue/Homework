@@ -23,6 +23,10 @@
   list-style: none;
   justify-content: center;
   max-width: 650px;
+  margin: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 650px;
 }
 
 .gallery li {
@@ -49,7 +53,6 @@
 .profile div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .footer {
