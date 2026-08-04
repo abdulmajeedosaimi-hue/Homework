@@ -96,6 +96,64 @@ a {
 }
 
 /* ==========================================================================
+       features Flexbox
+       ========================================================================== */
+
+.features-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 0;
+}
+
+.features-wrraper {
+  gap: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 40px;
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.feature-item {
+  flex: calc((100% - 3 * 1px) / 4);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.feature-item + .feature-item {
+  padding-left: 30px;
+  margin-left: 10px;
+}
+
+.feature-icon {
+  font-size: 32px;
+  color: #2c742f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.feature-content p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #999999;
+}
+
+/* ==========================================================================
        Categories Flexbox
        ========================================================================== */
 .category-flex {
