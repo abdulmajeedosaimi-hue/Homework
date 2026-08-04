@@ -130,11 +130,6 @@ a {
   flex: 1 1 250px; /* Allows growth and shrinkage, with a base width of 250px */
 }
 
-.feature-item + .feature-item {
-  padding-left: 30px;
-  margin-left: 10px;
-}
-
 .feature-icon {
   font-size: 32px;
   color: #2c742f;
