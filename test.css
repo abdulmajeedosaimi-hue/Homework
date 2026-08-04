@@ -101,6 +101,7 @@ a {
        ========================================================================== */
 
 .features-section {
+  max-width: 1320px;
   display: flex;
   justify-content: space-evenly;
   margin: 20px;
