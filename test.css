@@ -432,6 +432,7 @@ a {
 /* Testimonials Header */
 .testimonials-section {
   background-color: #666;
+  padding-bottom: 20px;
 }
 .testimonials-header {
   display: flex;
