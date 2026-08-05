@@ -431,15 +431,34 @@ a {
 
 /* Testimonials Header */
 .testimonials-section {
-  background-color: #666;
-  padding-bottom: 20px;
+  width: 100%;
+  max-width: none;
+  margin: 60px 0 0 0; /* Remove side margins */
+  background-color: #666; /* Your existing gray */
+  padding: 40px 0; /* Add vertical padding if needed */
+}
+
+.testimonials-header,
+.testimonials-container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+/* 
+.testimonials-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
 .testimonials-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-}
+} */
 
 .slider-controls {
   display: flex;
