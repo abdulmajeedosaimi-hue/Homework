@@ -1,0 +1,19 @@
+.dashboard-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 20px solid black;
+  height: 600px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-item {
+  flex: calc((100% - 1 * 20px) / 3);
+  flex-basis: auto;
+  /* height: 100px; */
+}
+* {
+  box-sizing: border-box;
+}
