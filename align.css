@@ -1,19 +1,129 @@
-.dashboard-list {
+/* Global basic resets for better viewing */
+body {
+  font-family: sans-serif;
+  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  border: 20px solid black;
-  height: 600px;
-  list-style: none;
-  padding: 0;
+  flex-direction: column;
+  gap: 40px;
+}
+ul {
   margin: 0;
+  padding: 0;
 }
 
-.dashboard-item {
-  flex: calc((100% - 1 * 20px) / 3);
-  flex-basis: auto;
-  /* height: 100px; */
+/* =========================================
+       Task 1 - Protect the Featured Card 
+========================================= */
+.products {
+  display: flex;
+  width: 600px;
+  gap: 20px;
+  list-style: none;
 }
+.product {
+  flex-basis: 250px;
+  padding: 20px;
+  border: 2px solid #ccc;
+}
+.product.featured {
+  flex-shrink: 0;
+}
+
+/* =========================================
+       Task 2 - Navigation List 
+========================================= */
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  list-style: none;
+  border: 2px solid #333;
+}
+.menu-item {
+  flex-basis: 250px;
+  padding: 20px;
+  border: 1px solid #999;
+}
+.menu-item.home {
+  flex-shrink: 1;
+}
+.menu-item.products {
+  flex-shrink: 2;
+}
+.menu-item.contact {
+  flex-shrink: 3;
+}
+
+/* =========================================
+       Task 3 - Product Card 
+========================================= */
+.product-card {
+  display: flex;
+  gap: 20px;
+  width: 500px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  align-items: center;
+}
+.product-card img {
+  align-self: flex-start;
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+}
+.product-info {
+  flex-grow: 1;
+}
+
+/* =========================================
+       Task 4 - Profile Card 
+========================================= */
+.profile {
+  display: flex;
+  width: 600px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  gap: 20px;
+  align-items: center;
+}
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-info {
+  flex-grow: 1;
+}
+.profile .status {
+  align-self: flex-start;
+  font-weight: bold;
+  color: green;
+}
+
+/* =========================================
+       Task 5 - Pricing Plans List 
+========================================= */
+.pricing {
+  display: flex;
+  width: 650px;
+  gap: 20px;
+  border: 2px solid #333;
+  list-style: none;
+  align-items: center;
+}
+.plan {
+  flex-basis: 250px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  flex-shrink: 1;
+}
+.plan.popular {
+  flex-shrink: 0;
+  align-self: flex-start;
+  border-color: #007bff;
+}
+
 * {
   box-sizing: border-box;
 }
