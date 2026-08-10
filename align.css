@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 /* Global basic resets for better viewing */
 body {
   font-family: sans-serif;
@@ -122,8 +125,4 @@ ul {
   flex-shrink: 0;
   align-self: flex-start;
   border-color: #007bff;
-}
-
-* {
-  box-sizing: border-box;
 }
