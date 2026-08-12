@@ -16,7 +16,7 @@ body {
   border: 10px dashed blue;
 } */
 
-section h2 {
+/* section h2 {
   margin-bottom: 15px;
   font-size: 1.25rem;
   color: #111;
@@ -26,9 +26,27 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+} */
+
+.dashboard {
+  display:grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: 80px 200px;
+  grid-template-areas: " header header"
+  "sidebar main"
+  "footer footer";
+}
+header{
+  grid-area: header;
+}
+aside{
+  grid-area: sidebar;
+}
+footer{
+  grid-area: footer;
 }
 /* --- Task 1 - Dashboard Layout --- */
-.dashboard {
+/* .dashboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -54,10 +72,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 100px;
-}
+} */
 
 /* --- Task 2 - Featured Articles --- */
-.articles {
+/* .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px;
@@ -83,10 +101,10 @@ ul {
 
 .articles article:nth-child(4) {
   place-self: center start;
-}
+} */
 
 /* --- Task 3 - Blog Homepage --- */
-.blog {
+/* .blog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px;
@@ -95,9 +113,9 @@ ul {
 .blog header,
 .blog footer {
   grid-column: 1 / -1;
-}
+} */
 
-.blog article:nth-child(2) {
+/* .blog article:nth-child(2) {
   grid-column: span 2;
 }
 
@@ -115,7 +133,7 @@ ul {
   color: #4c1d95;
   padding: 1rem;
   font-family: sans-serif;
-}
+} */
 /* Task 1 */
 /* .posts {
   display: grid;
