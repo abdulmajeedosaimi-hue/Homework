@@ -4,6 +4,7 @@
 }
 /* Global Reset and Base Styles */
 body {
+  place-items: center;
   font-family: sans-serif;
   margin: 100px;
   background-color: #f0f0f0;
@@ -28,6 +29,7 @@ ul {
 } */
 
 .products {
+  /* place-items: center; */
   margin-top: 20px;
   display: grid;
 
