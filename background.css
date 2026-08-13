@@ -1,0 +1,13 @@
+.hero {
+  background-image: url(https://placehold.co/10x10/orange/green/?text=Hello+World);
+  background-position: 50% 50%;
+  background-color: aqua;
+  background-size: cover;
+}
+
+.destination {
+  background-image: url(https://placehold.co/100x100/lightblue/green/?text=Hello+World);
+  /* background-size:co; */
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+}
