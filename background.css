@@ -1,13 +1,154 @@
-.hero {
-  background-image: url(https://placehold.co/10x10/orange/green/?text=Hello+World);
-  background-position: 50% 50%;
-  background-color: aqua;
-  background-size: cover;
+/* ==========================================================
+   Base Layout & Reset
+   ========================================================== */
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.destination {
-  background-image: url(https://placehold.co/100x100/lightblue/green/?text=Hello+World);
-  /* background-size:co; */
-  background-position: 50% 10%;
-  background-repeat: no-repeat;
+body {
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
 }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  padding: 16px 0;
+}
+
+.hero {
+  min-height: 380px;
+  border-radius: 12px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+
+  background-image:
+    url("https://cdn-icons-png.flaticon.com/512/869/869869.png"),
+    url("https://cdn-icons-png.flaticon.com/512/414/414825.png"),
+    url("https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg");
+
+  background-repeat: no-repeat;
+
+  background-position:
+    5% 10%,
+    90% 10%,
+    center center;
+
+  background-size:
+    70px auto,
+    90px auto,
+    cover;
+}
+
+/* background-color: #e9ecef;
+  background-image: radial-gradient(#ced4da 1px, transparent 1px);
+  background-position: 0 0;
+  background-size: 16px 16px;
+  background-repeat: repeat; */
+
+.gallery {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 8px;
+  background-position: bottom;
+  /* Shorthand declaration: [color] [image] [repeat] [position] / [size] */
+  /* background: #e9ecef radial-gradient(#ced4da 1px, transparent 1px) repeat 0 0 /
+    16px 16px; */
+}
+
+.gallery-item {
+  /* width: 50%;
+  max-width: 900px;
+  height: 250px; */
+  margin: 16px auto 0;
+  overflow: hidden;
+  border-radius: 8px;
+
+  background-image: url("https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg");
+  background-size: 556px 556px;
+  background-position: bottom;
+}
+
+.gallery-item img {
+  display: block;
+  margin: 0 auto;
+
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.feature {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.feature-image {
+  width: 150px;
+  height: 200px;
+  overflow: auto;
+  background-color: #212529;
+  border-radius: 6px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-fill {
+  object-fit: fill;
+}
+
+.img-contain {
+  object-fit: contain;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+
+.gallery {
+  background-image: url("https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg");
+  object-fit: cover;
+  /* background-size: 556px 556px;
+  object-position: top;
+  object-fit: fill; */
+}
+
+/* object-position: center; */
+/* object-position: top; */
+/* object-position: bottom; */
+/* object-position: 20% 50%; */
+/* object-position: 80% 50%; */
+/* object-position: 50% 20%;  */
