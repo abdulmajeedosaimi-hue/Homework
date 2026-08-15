@@ -1,0 +1,203 @@
+:root {
+  /* Layout Variables */
+  --gallery-max-width: 900px;
+  --card-height: 200px;
+  --card-radius: 16px;
+  --gap-size: 24px;
+  --text-color: #ffffff;
+  --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+  /* Sunset Colors (Linear - to bottom) */
+  --sunset-1: #ff5e62;
+  --sunset-2: #ff9966;
+  --sunset-3: #ffde59;
+
+  /* Ocean Colors (Linear - to right) */
+  --ocean-1: #00223e;
+  --ocean-2: #1d976c;
+  --ocean-3: #93f9b9;
+
+  /* Diagonal Colors (Linear - 135deg) */
+  --diag-1: #8a2387;
+  --diag-2: #e94057;
+  --diag-3: #f27121;
+
+  /* Color Stops Colors (Linear - uneven %) */
+  --stop-1: #2b5876;
+  --stop-2: #4e4376;
+  --stop-3: #f857a6;
+  --stop-4: #ff5858;
+
+  /* Stripes Colors (Linear - solid color stops) */
+  --stripe-1: #fc466b;
+  --stripe-2: #3f5efb;
+  --stripe-3: #11998e;
+  --stripe-4: #38ef7d;
+
+  /* Radial Colors (Circle at center) */
+  --rad-1: #f3904f;
+  --rad-2: #3b4371;
+  --rad-3: #141829;
+
+  /* Radial Corner Colors (Circle at top right) */
+  --rad-corner-1: #00f2fe;
+  --rad-corner-2: #4facfe;
+  --rad-corner-3: #000428;
+
+  /* Custom Gradient Colors (135deg with uneven stops) */
+  --custom-1: #f12711;
+  --custom-2: #f5af19;
+  --custom-3: #654ea3;
+  --custom-4: #eaafc8;
+
+  /* Overlay Colors */
+  --overlay-top: rgba(254, 252, 252, 0.85);
+  --overlay-bottom: rgba(246, 8, 8, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: #f0f2f5;
+  padding: 40px 20px;
+}
+
+.gallery {
+  max-width: var(--gallery-max-width);
+  margin: 0 auto;
+}
+
+.gallery h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.gradient-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-size);
+}
+
+.gradient-card {
+  flex: 1 1 calc(50% - var(--gap-size));
+  min-width: 280px;
+  height: var(--card-height);
+  border-radius: var(--card-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.gradient-card h2 {
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* 2. Sunset: linear-gradient, to bottom, 3 colors */
+.card-sunset {
+  background-image: linear-gradient(
+    to bottom,
+    var(--sunset-1),
+    var(--sunset-2),
+    var(--sunset-3)
+  );
+}
+
+/* 3. Ocean: linear-gradient, to right, 3 colors */
+.card-ocean {
+  background-image: linear-gradient(
+    to right,
+    var(--ocean-1),
+    var(--ocean-2),
+    var(--ocean-3)
+  );
+}
+
+/* 4. Diagonal: linear-gradient, deg angle, 3 colors */
+.card-diagonal {
+  background-image: linear-gradient(
+    135deg,
+    var(--diag-1),
+    var(--diag-2),
+    var(--diag-3)
+  );
+}
+
+/* 5. Color Stops: linear-gradient, 4 colors, custom percentages */
+.card-color-stops {
+  background-image: linear-gradient(
+    to right,
+    var(--stop-1) 10%,
+    var(--stop-2) 35%,
+    var(--stop-3) 70%,
+    var(--stop-4) 95%
+  );
+}
+
+/* 6. Stripes: linear-gradient, solid/sharp color stops */
+.card-stripes {
+  background-image: linear-gradient(
+    to right,
+    var(--stripe-1) 0%,
+    var(--stripe-1) 25%,
+    var(--stripe-2) 25%,
+    var(--stripe-2) 50%,
+    var(--stripe-3) 50%,
+    var(--stripe-3) 75%,
+    var(--stripe-4) 75%,
+    var(--stripe-4) 100%
+  );
+}
+
+/* 7. Radial: radial-gradient, circle at center, 3 colors */
+.card-radial {
+  background-image: radial-gradient(
+    circle at center,
+    var(--rad-1),
+    var(--rad-2),
+    var(--rad-3)
+  );
+}
+
+/* 8. Radial Corner: radial-gradient, circle at top right, 3 colors */
+.card-radial-corner {
+  background-image: radial-gradient(
+    circle at top right,
+    var(--rad-corner-1),
+    var(--rad-corner-2),
+    var(--rad-corner-3)
+  );
+}
+
+/* 9. Your Gradient: 135deg diagonal with 4 non-uniform stops */
+.card-custom {
+  background-image: linear-gradient(
+    135deg,
+    var(--custom-1) 15%,
+    var(--custom-2) 40%,
+    var(--custom-3) 75%,
+    var(--custom-4) 90%
+  );
+}
+
+/* Extra Challenge: Gradient overlay on top of an image */
+.card-extra-overlay {
+  background-image:
+    linear-gradient(to bottom, var(--overlay-top), var(--overlay-bottom)),
+    url("https://picsum.photos/600/400");
+  background-size: cover;
+  background-position: center;
+}
