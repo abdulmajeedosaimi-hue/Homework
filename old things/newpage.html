@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="newstyle.css" />
+    <title>Healthy Lifestyle Blog</title>
+  </head>
+  <body>
+    <main>
+      <!-- # Product Cards Grid (`flex-wrap` + `gap`)
+
+### Goal:
+
+Create a responsive product grid using Flexbox.
+
+### HTML: -->
+
+      <ul class="products">
+        <li class="product">
+          <img src="https://placehold.co/120/orange/white" alt="Placeholder" />
+          <h2>Laptop</h2>
+          <p>Powerful laptop for developers.</p>
+        </li>
+
+        <li class="product">
+          <h2>Phone</h2>
+          <p>Modern smartphone with great camera.</p>
+          <img src="https://placehold.co/120/blue/white" alt="Placeholder" />
+        </li>
+
+        <li class="product">
+          <h2>Tablet</h2>
+          <img src="https://placehold.co/120/red/white" alt="Placeholder" />
+          <p>Portable device for everyday tasks.</p>
+        </li>
+
+        <li class="product">
+          <h2>Headphones</h2>
+          <img src="https://placehold.co/120/skyblue/white" alt="Placeholder" />
+          <p>Wireless headphones with noise cancellation.</p>
+        </li>
+
+        <li class="product">
+          <img src="https://placehold.co/120/black/white" alt="Placeholder" />
+          <h2>Keyboard</h2>
+          <p>Mechanical keyboard for programmers.</p>
+        </li>
+
+        <li class="product">
+          <img src="https://placehold.co/120/gray/white" alt="Placeholder" />
+          <h2>Mouse</h2>
+          <p>Ergonomic mouse for comfortable work.</p>
+        </li>
+      </ul>
+
+      <div class="card">
+        <div class="wrapper">
+          <img src="https://placehold.co/150" />
+
+          <div class="content">
+            <h2>Mountain Trip</h2>
+            <p>Explore beautiful places.</p>
+            <p>places.</p>
+          </div>
+
+          <button>Book Now</button>
+        </div>
+      </div>
+      ```
+
+      <!-- ### Requirements
+
+`.card`
+
+- vertical flex layout
+- center all content
+- image on top
+- button at the bottom -->
+      <!-- 
+### Requirements:
+
+1. Make `.products` a flex container.
+2. Allow items to move to a new row.
+3. Add `20px` spacing between cards.
+4. Remove default list styles.
+5. Make cards have borders and padding. -->
+
+      <!-- Task 1 -->
+      <!-- <h2>Task 1</h2>
+      <div class="about">
+        <img src="https://placehold.co/120" alt="Placeholder" />
+        <div>
+          <h2>About Me</h2>
+          <p>I am a developer.</p>
+        </div>
+      </div>
+
+      <hr /> -->
+
+      <!-- Task 2 -->
+      <!-- <h2>Task 2</h2>
+      <ul class="products">
+        <li>
+          <img src="https://placehold.co/120" alt="Laptop" />
+          <h2>Laptop</h2>
+          <p>$1000</p>
+          <button>Buy</button>
+        </li>
+        <li>
+          <img src="https://placehold.co/120" alt="Phone" />
+          <h2>Phone</h2>
+          <p>$500</p>
+          <button>Buy</button>
+        </li>
+        <li>
+          <img src="https://placehold.co/120" alt="Tablet" />
+          <h2>Tablet</h2>
+          <p>$300</p>
+          <button>Buy</button>
+        </li>
+      </ul>
+
+      <hr /> -->
+
+      <!-- Task 3 -->
+      <!-- <h2>Task 3</h2>
+      <div class="article">
+        <img src="https://placehold.co/200x120" alt="Blog Image" />
+        <div class="content">
+          <h2>Learn Flexbox</h2>
+          <p>Flexbox makes layouts easier.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <hr /> -->
+      <!-- # Task 2. Center a Profile
+
+### Goal
+
+Practice centering everything inside a single block.
+
+### HTML
+
+``` -->
+
+      <!-- <div class="profile">
+        <div>
+          <img src="https://placehold.co/100" alt="" />
+          <h2>Alex Smith</h2>
+          <p>Web Developer</p>
+        </div>
+      </div> -->
+      <!-- ```
+
+### Requirements
+
+`.profile`
+
+- use flexbox
+- image, heading, paragraph should be one below another
+- everything should be centered horizontally
+- add spacing between elements -->
+
+      <!-- <br /> -->
+      <!-- # Task 1. Center Everything
+
+## Goal
+
+Center the card horizontally and vertically in the browser window.
+
+### HTML -->
+
+      <!-- <div class="wrapper">
+        <div class="card">
+          <h2>Welcome!</h2>
+          <p>Learn Flexbox.</p>
+          <button>Start</button>
+        </div>
+      </div> -->
+
+      <!-- Requirements:
+
+- Center the card horizontally.
+- Center the card vertically.
+- Stack the card content vertically.
+- Add equal spacing between the heading, paragraph, and button. -->
+    </main>
+    <section>
+      <svg
+        xmlns="http://w3.org"
+        viewBox="0 0 400 400"
+        width="100%"
+        height="100%"
+      >
+        <!-- Background Canvas -->
+        <rect width="400" height="400" fill="#f0fdf4" rx="20" />
+
+        <!-- Background Pattern (Subtle Green Geometrics) -->
+        <path
+          d="M 0,40 L 40,0 M 360,400 L 400,360"
+          stroke="#bbf7d0"
+          stroke-width="2"
+          opacity="0.4"
+        />
+
+        <!-- Thobe (Shoulders & Body) -->
+        <path
+          d="M100 400 C100 320 130 280 200 280 C270 280 300 320 300 400 Z"
+          fill="#ffffff"
+          stroke="#e2e8f0"
+          stroke-width="1"
+        />
+        <path
+          d="M195 280 V330"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <!-- Collar Detail -->
+
+        <!-- Neck -->
+        <rect x="180" y="240" width="40" height="50" fill="#e0a980" />
+
+        <!-- Head/Face -->
+        <ellipse cx="200" cy="190" rx="55" ry="65" fill="#f3c19d" />
+
+        <!-- Beard & Mustache (Dark Charcoal) -->
+        <!-- Jaw beard -->
+        <path
+          d="M145 180 C145 255 255 255 255 180 C255 265 145 265 145 180 Z"
+          fill="#1e293b"
+        />
+        <!-- Mustache -->
+        <path d="M170 212 Q200 205 230 212 Q200 222 170 212 Z" fill="#1e293b" />
+        <!-- Soul Patch -->
+        <path d="M195 225 H205 L200 235 Z" fill="#1e293b" />
+
+        <!-- Eyes -->
+        <ellipse cx="175" cy="175" rx="8" ry="5" fill="#ffffff" />
+        <ellipse cx="225" cy="175" rx="8" ry="5" fill="#ffffff" />
+        <!-- Pupils -->
+        <circle cx="175" cy="175" r="4" fill="#0f172a" />
+        <circle cx="225" cy="175" r="4" fill="#0f172a" />
+
+        <!-- Eyebrows -->
+        <path
+          d="M162 165 Q175 158 188 166"
+          stroke="#1e293b"
+          stroke-width="3"
+          stroke-linecap="round"
+          fill="none"
+        />
+        <path
+          d="M212 166 Q225 158 238 165"
+          stroke="#1e293b"
+          stroke-width="3"
+          stroke-linecap="round"
+          fill="none"
+        />
+
+        <!-- Nose -->
+        <path
+          d="M195 175 Q200 198 205 198"
+          stroke="#e0a980"
+          stroke-width="3"
+          fill="none"
+          stroke-linecap="round"
+        />
+
+        <!-- Smile -->
+        <path
+          d="M188 238 Q200 244 212 238"
+          stroke="#0f172a"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+        />
+
+        <!-- Ghutra (White Headscarf - Draped Layers) -->
+        <!-- Left Side Drape -->
+        <path
+          d="M148 150 C110 160 90 240 95 350 L140 350 C130 250 145 180 148 150 Z"
+          fill="#ffffff"
+          filter="drop-shadow(0px 4px 4px rgba(0,0,0,0.05))"
+        />
+        <!-- Right Side Drape -->
+        <path
+          d="M252 150 C290 160 310 240 305 350 L260 350 C270 250 255 180 252 150 Z"
+          fill="#ffffff"
+          filter="drop-shadow(0px 4px 4px rgba(0,0,0,0.05))"
+        />
+        <!-- Top Cap Over Head -->
+        <path d="M142 155 C140 100 260 100 258 155 Z" fill="#ffffff" />
+
+        <!-- Agal (Black Headband - Two Rings) -->
+        <ellipse
+          cx="200"
+          cy="122"
+          rx="54"
+          ry="10"
+          fill="none"
+          stroke="#0f172a"
+          stroke-width="7"
+        />
+        <ellipse
+          cx="200"
+          cy="129"
+          rx="56"
+          ry="10"
+          fill="none"
+          stroke="#0f172a"
+          stroke-width="7"
+        />
+      </svg>
+
+      <br /><svg
+        xmlns="http://w3.org"
+        viewBox="0 0 400 400"
+        width="50%"
+        height="50%"
+      >
+        <!-- Background -->
+        <rect width="400" height="400" fill="#f0fdf4" rx="20" />
+
+        <!-- Floppy Ears (Background Layer) -->
+        <ellipse
+          cx="120"
+          cy="190"
+          rx="35"
+          ry="60"
+          fill="#c2410c"
+          transform="rotate(15 120 190)"
+        />
+        <ellipse
+          cx="280"
+          cy="190"
+          rx="35"
+          ry="60"
+          fill="#c2410c"
+          transform="rotate(-15 280 190)"
+        />
+
+        <!-- Head Base -->
+        <ellipse cx="200" cy="190" rx="75" ry="65" fill="#ea580c" />
+
+        <!-- Snout / Muzzle -->
+        <ellipse cx="200" cy="215" rx="45" ry="35" fill="#fff7ed" />
+
+        <!-- Eyes -->
+        <circle cx="165" cy="170" r="10" fill="#1e293b" />
+        <circle cx="235" cy="170" r="10" fill="#1e293b" />
+
+        <!-- Eye Highlights -->
+        <circle cx="162" cy="167" r="3" fill="#ffffff" />
+        <circle cx="232" cy="167" r="3" fill="#ffffff" />
+
+        <!-- Nose -->
+        <path d="M180 200 H220 C220 220 180 220 180 200 Z" fill="#1e293b" />
+
+        <!-- Tongue / Mouth -->
+        <path d="M190 230 Q200 260 210 230 Z" fill="#f43f5e" />
+        <line
+          x1="200"
+          y1="215"
+          x2="200"
+          y2="230"
+          stroke="#1e293b"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+
+        <!-- Cute Rosy Cheeks -->
+        <circle cx="140" cy="205" r="12" fill="#f43f5e" opacity="0.3" />
+        <circle cx="260" cy="205" r="12" fill="#f43f5e" opacity="0.3" />
+      </svg>
+
+      <br />
+      <svg xmlns="http://w3.org" viewBox="0 0 400 400" width="50%" height="50%">
+        <!-- Background Space -->
+        <rect width="400" height="400" fill="#0d1117" />
+
+        <!-- Stars -->
+        <circle cx="80" cy="100" r="2" fill="#ffffff" opacity="0.8" />
+        <circle cx="320" cy="80" r="3" fill="#ffffff" opacity="0.5" />
+        <circle cx="340" cy="280" r="1.5" fill="#ffffff" opacity="0.9" />
+        <circle cx="70" cy="250" r="2.5" fill="#ffffff" opacity="0.6" />
+
+        <!-- Exhaust Flame -->
+        <path d="M170 260 Q200 370 230 260 Z" fill="#ff5722" />
+        <path d="M180 260 Q200 330 220 260 Z" fill="#ffeb3b" />
+
+        <!-- Rocket Body -->
+        <path
+          d="M200 80 C240 140 240 230 230 260 L170 260 C160 230 160 140 200 80 Z"
+          fill="#f4f4f5"
+        />
+
+        <!-- Rocket Nose Cone -->
+        <path
+          d="M200 80 C223 115 228 140 228 150 L172 150 C172 140 177 115 200 80 Z"
+          fill="#e11d48"
+        />
+
+        <!-- Left Fin -->
+        <path d="M170 220 L140 260 L170 260 Z" fill="#e11d48" />
+
+        <!-- Right Fin -->
+        <path d="M230 220 L260 260 L230 260 Z" fill="#e11d48" />
+
+        <!-- Rocket Window -->
+        <circle
+          cx="200"
+          cy="180"
+          r="18"
+          fill="#93c5fd"
+          stroke="#cbd5e1"
+          stroke-width="3"
+        />
+      </svg>
+    </section>
+  </body>
+</html>

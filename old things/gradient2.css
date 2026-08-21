@@ -5,7 +5,7 @@
   --card-radius: 16px;
   --gap-size: 24px;
   --text-color: #ffffff;
-  --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  --text-shadow: 1px 2px 1px rgba(0, 0, 0, 1);
 
   /* Sunset Colors (Linear - to bottom) */
   --sunset-1: #ff5e62;
