@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
   --gren-gray-scale-50: #edf2ee;
@@ -29,7 +29,13 @@ html {
 }
 
 body {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
   background-color: var(--gren-gray-scale-50, #edf2ee);
   color: var(--gray-scale-gray-900, #1a1a1a);
   line-height: 1.5;
@@ -38,7 +44,8 @@ body {
   padding: 40px 0;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -47,7 +54,9 @@ img, svg {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.2s ease, opacity 0.2s ease;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 button {
@@ -58,7 +67,8 @@ button {
   outline: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -436,23 +446,32 @@ ul, ol {
 }
 
 .featured-promo-banner {
+  background-image: url("images/banner-promo-summer-sale.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr;
-  align-content: space-between;
+  align-content: start;
   justify-items: center;
   border-radius: 6px;
   overflow: hidden;
   height: 339px;
-  padding: 24px 16px;
+
   text-align: center;
 }
 
-.featured-promo-bg {
+/* .featured-promo-bg {
+  background-image: url("images/banner-promo-summer-sale.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: 1 / 1;
   width: 100%;
   height: 100%;
+  min-height: 339px;
   object-fit: cover;
-}
+} */
 
 .featured-promo-content {
   grid-area: 1 / 1;
@@ -471,6 +490,11 @@ ul, ol {
   color: var(--gray-scale-gray-900, #1a1a1a);
 }
 
+.product-card-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .promo-discount {
   font-size: 32px;
   font-weight: 600;
@@ -479,6 +503,8 @@ ul, ol {
 }
 
 .btn-banner-cta {
+  margin-top: 5px;
+  /* outline: 20px solid red; */
   grid-area: 1 / 1;
   align-self: end;
   background: var(--gray-scale-white, #ffffff);
@@ -490,6 +516,7 @@ ul, ol {
   color: var(--branding-success, #00b207);
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 10px;
   transition: all 0.2s ease;
 }
 
@@ -537,10 +564,11 @@ ul, ol {
 }
 
 .product-info-wrap {
-  padding: 0 16px 16px 16px;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  margin-bottom: 16px;
 }
 
 .product-title {
@@ -565,7 +593,7 @@ ul, ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px 16px 16px;
+  padding: 0 16px;
 }
 
 .star-rating {
@@ -706,9 +734,13 @@ ul, ol {
 }
 
 .deal-promo-banner {
+  background-image: url("images/banner-promo-hot-sale.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr;
-  align-content: space-between;
+  align-content: start;
   justify-items: center;
   border-radius: 6px;
   overflow: hidden;
@@ -717,12 +749,16 @@ ul, ol {
   text-align: center;
 }
 
-.deal-promo-bg {
+/* .deal-promo-bg {
+  background-image: url("images/banner-promo-hot-sale.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: 1 / 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .deal-promo-content {
   grid-area: 1 / 1;
@@ -778,7 +814,11 @@ ul, ol {
   grid-area: 1 / 1;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, rgba(0, 44, 2, 0.7), rgba(0, 44, 2, 0.7));
+  background: linear-gradient(
+    to left,
+    rgba(0, 44, 2, 0.7),
+    rgba(0, 44, 2, 0.7)
+  );
 }
 
 .video-banner-content {
