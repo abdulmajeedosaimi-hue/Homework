@@ -457,7 +457,6 @@ ol {
   border-radius: 6px;
   overflow: hidden;
   height: 339px;
-
   text-align: center;
 }
 
@@ -474,6 +473,7 @@ ol {
 } */
 
 .featured-promo-content {
+  padding-top: 24px;
   grid-area: 1 / 1;
   align-self: start;
   display: flex;
@@ -1147,6 +1147,9 @@ ol {
 }
 
 .app-btn {
+  width: 154px;
+  height: 59px;
+
   background: var(--gray-scale-white, #ffffff);
   padding: 10px;
   display: flex;
@@ -1247,4 +1250,58 @@ ol {
   font-size: 12px;
   font-weight: 600;
   color: var(--gray-scale-gray-900, #1a1a1a);
+}
+.svg1 {
+  position: absolute;
+  width: 79;
+  height: 70;
+  top: 961px;
+  left: 1670px;
+
+  opacity: 1;
+}
+.svg2 {
+  position: absolute;
+  width: 79;
+  height: 70;
+  top: 1566px;
+  left: 192px;
+
+  opacity: 1;
+}
+.svg3 {
+  position: absolute;
+  width: 96;
+  height: 94;
+  top: 2394px;
+  left: 1669px;
+
+  opacity: 1;
+}
+.svg4 {
+  position: absolute;
+  width: 110;
+  height: 147;
+  top: 3220px;
+  left: 1667px;
+
+  opacity: 1;
+}
+.svg5 {
+  position: absolute;
+  width: 62;
+  height: 66;
+  top: 3955px;
+  left: 159px;
+
+  opacity: 1;
+}
+.svg6 {
+  position: absolute;
+  width: 118;
+  height: 112;
+  top: 4472px;
+  left: 172px;
+
+  opacity: 1;
 }
