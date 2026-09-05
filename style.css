@@ -43,7 +43,12 @@ body {
   overflow-x: hidden;
   padding: 40px 0;
 }
-
+.just-test {
+  position: relative;
+}
+main {
+  position: relative;
+}
 img,
 svg {
   display: block;
@@ -1261,17 +1266,20 @@ ol {
 
 .site-header-leaf {
   position: absolute;
-  left: 15%;
+  left: 30%;
 }
 .hero-leaf {
   left: 25%;
   position: absolute;
 }
 .featured-products-leaf {
+  top:750px;
+  z-index:  0;
   left: 35%;
   position: absolute;
 }
 .video-banner-leaf {
+  top: -50px;
   left: 45%;
   position: absolute;
 }
