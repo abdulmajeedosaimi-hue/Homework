@@ -1,0 +1,86 @@
+/* 1. Positioning Context */
+.scene {
+  width: 700px;
+  height: 500px;
+  margin: 50px auto;
+  background: #e2e8f0;
+  position: relative;
+
+  border-radius: 16px;
+}
+
+.card {
+  width: 300px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* z-index: 2; */
+}
+
+.card:hover {
+  transform: translate(-50%, -58%);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.card:hover .badge {
+  transform: translateY(-4px) rotate(-8deg) scale(1.1);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 22px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background: #2563eb;
+  transform: translateX(8px) scaleX(1.08);
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: tomato;
+  position: absolute;
+  z-index: 1;
+}
+
+.circle-one {
+  top: 60px;
+  left: 60px;
+  margin: 0; /* Reset starter CSS margin */
+}
+
+.circle-two {
+  bottom: 60px;
+  right: 60px;
+  margin: 0; /* Reset starter CSS margin */
+  background: #f97316;
+}
+
+.scene:hover .circle-one {
+  transform: translate(-20px, -20px) scale(1.25);
+}
+
+.scene:hover .circle-two {
+  transform: translate(25px, 25px) scale(0.85);
+}

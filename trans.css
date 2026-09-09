@@ -1,0 +1,42 @@
+:root {
+  /* Translate */
+  --tx: 0px;
+  --ty: 0px;
+  --tz: 0px;
+
+  /* Scale */
+  --scale-x: 1;
+  --scale-y: 1;
+  --scale-z: 1;
+
+  /* Rotate (2D & 3D axes) */
+  --rot-x: 0deg;
+  --rot-y: 0deg;
+  --rot-z: 0deg;
+
+  /* Skew */
+  --skew-x: 0deg;
+  --skew-y: 0deg;
+
+  /* Transform Context & 3D Helpers */
+  --perspective: none;
+  --origin-x: 50%;
+  --origin-y: 50%;
+  --origin-z: 0px;
+  --transform-style: flat; /* flat | preserve-3d */
+  --backface-visibility: visible; /* visible | hidden */
+}
+
+.element {
+  /* Positioning & perspective helpers */
+  transform-origin: var(--origin-x) var(--origin-y) var(--origin-z);
+  transform-style: var(--transform-style);
+  backface-visibility: var(--backface-visibility);
+
+  /* All transform functions combined */
+  transform: perspective(var(--perspective))
+    translate3d(var(--tx), var(--ty), var(--tz)) rotateX(var(--rot-x))
+    rotateY(var(--rot-y)) rotateZ(var(--rot-z))
+    scale3d(var(--scale-x), var(--scale-y), var(--scale-z))
+    skew(var(--skew-x), var(--skew-y));
+}
