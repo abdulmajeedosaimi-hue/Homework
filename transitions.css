@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+.traffic-light {
+  width: 100px;
+  padding: 15px;
+  background-color: #222;
+  border-radius: 15px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+}
+
+.yellow {
+  background-color: #b8860b;
+  transition-property: background-color;
+  transition-duration: 0.7s;
+}
+
+.green {
+  background-color: green;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.traffic-light:hover .red {
+  opacity: 0.3;
+}
+
+.traffic-light:hover .yellow {
+  background-color: #ffff00;
+}
+
+.traffic-light:hover .green {
+  transform: scale(1.25);
+}
+.loader {
+  width: 300px;
+  height: 20px;
+  padding: 5px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.loader-bar {
+  width: 50px;
+  height: 20px;
+  background-color: teal;
+  border-radius: 10px;
+  opacity: 1;
+  transition-property: width, opacity;
+  transition-duration: 1s, 0.4s;
+  transition-delay: 0s, 500ms;
+}
+
+.loader:hover .loader-bar {
+  width: 100%;
+  opacity: 0.5;
+}
+.notification {
+  width: 300px;
+  padding: 20px;
+  background-color: #e8f5e9;
+  border: 1px solid #81c784;
+  border-radius: 10px;
+  transform: translateY(0);
+  opacity: 0.7;
+  transition-property: transform, opacity;
+  transition-duration: 5s, 0.1s;
+  transition-timing-function: ease-out, ease-in;
+  transition-delay: 0s, 200ms;
+}
+
+.notification h3 {
+  margin-top: 0;
+}
+
+.notification p {
+  margin-bottom: 0;
+}
+
+.notification:hover {
+  transform: translateY(-15px);
+  opacity: 1;
+}

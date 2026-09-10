@@ -65,15 +65,11 @@
 }
 
 .circle-one {
-  top: 60px;
-  left: 60px;
-  margin: 0; /* Reset starter CSS margin */
+  margin-left: 50px;
 }
 
 .circle-two {
-  bottom: 60px;
-  right: 60px;
-  margin: 0; /* Reset starter CSS margin */
+  margin-left: 570px;
   background: #f97316;
 }
 
