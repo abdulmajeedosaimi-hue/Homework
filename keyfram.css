@@ -1,0 +1,115 @@
+:root {
+  --btn-color-start: #007bff;
+  --btn-color-mid: #28a745;
+  --btn-anim-duration: 2s;
+  --btn-anim-timing: ease-in-out;
+  --box-duration: 3s;
+  --box-timing: linear;
+  --box-distance: 300px;
+  --loader-duration: 1s;
+  --loader-delay: 1s;
+  --loader-timing: linear;
+  --loader-color: #e83e8c;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.button {
+  padding: 15px 30px;
+
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background-color: var(--btn-color-start);
+  animation-name: pulse;
+  animation-duration: var(--btn-anim-duration);
+  animation-timing-function: var(--btn-anim-timing);
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: var(--btn-color-start);
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: var(--btn-color-mid);
+  }
+  100% {
+    transform: scale(1);
+    background-color: var(--btn-color-start);
+  }
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  background-color: #ff5722;
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation-name: moveRight;
+  animation-duration: var(--box-duration);
+  animation-timing-function: var(--box-timing);
+  animation-iteration-count: infinite;
+}
+
+.box:nth-child(1) {
+  animation-direction: normal;
+}
+
+.box:nth-child(2) {
+  animation-direction: reverse;
+}
+
+.box:nth-child(3) {
+  animation-direction: alternate;
+}
+.box:nth-child(4) {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--box-distance));
+  }
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid var(--loader-color);
+  /* border-radius: 150%; */
+
+  animation-name: spin;
+  animation-duration: var(--loader-duration);
+  animation-timing-function: var(--loader-timing);
+  animation-iteration-count: infinite;
+  animation-delay: var(--loader-delay);
+}
+
+.loader:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
