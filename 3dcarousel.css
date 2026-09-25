@@ -1,0 +1,87 @@
+div {
+  display: block;
+  margin: 0 auto;
+}
+.scene {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+/* Container */
+.carousel {
+  position: relative;
+  width: 180px;
+  height: 120px;
+  transform-style: preserve-3d;
+  animation: spin 8s linear infinite;
+}
+
+.carousel:hover {
+  animation-play-state: paused;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 120px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  backface-visibility: hidden;
+}
+
+.card::after {
+  content: "nothing";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: blue;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.card-1 {
+  transform: rotateY(0deg) translateZ(200px);
+}
+.card-2 {
+  transform: rotateY(60deg) translateZ(200px);
+}
+.card-3 {
+  transform: rotateY(120deg) translateZ(200px);
+}
+.card-4 {
+  transform: rotateY(180deg) translateZ(200px);
+}
+.card-5 {
+  transform: rotateY(240deg) translateZ(200px);
+}
+.card-6 {
+  transform: rotateY(300deg) translateZ(200px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
