@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>keyfram</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div class="form-header">
+        <h1>Create an Account</h1>
+        <span>Join Novacord to personalize your experience</span>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <p class="group-title">Personal Information</p>
+
+          <div class="field-row">
+            <label for="username">Username *</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="e.g. alex99"
+              required
+            />
+          </div>
+
+          <div class="field-row">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="alex@example.com"
+              required
+            />
+          </div>
+
+          <div class="field-row">
+            <label for="password">Password *</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="At least 8 characters"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <div class="field-row">
+            <label for="age">Age (13-100)</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="13"
+              max="100"
+              placeholder="18"
+            />
+          </div>
+
+          <div class="field-row">
+            <label for="city">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              list="cities-list"
+              placeholder="Choose or type a city"
+            />
+            <datalist id="cities-list">
+              <option value="New York"></option>
+              <option value="London"></option>
+              <option value="Tokyo"></option>
+              <option value="Paris"></option>
+              <option value="Berlin"></option>
+            </datalist>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="group-title">Preferences</p>
+
+          <div class="field-row">
+            <label>Favorite category</label>
+            <div class="options-grid">
+              <label class="choice-label">
+                <input type="radio" name="favorite_category" value="movies" />
+                Movies
+              </label>
+              <label class="choice-label">
+                <input type="radio" name="favorite_category" value="music" />
+                Music
+              </label>
+              <label class="choice-label">
+                <input type="radio" name="favorite_category" value="games" />
+                Games
+              </label>
+              <label class="choice-label">
+                <input type="radio" name="favorite_category" value="books" />
+                Books
+              </label>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <label>Interests</label>
+            <div class="options-grid">
+              <label class="choice-label">
+                <input type="checkbox" name="interests" value="sports" /> Sports
+              </label>
+              <label class="choice-label">
+                <input type="checkbox" name="interests" value="technology" />
+                Technology
+              </label>
+              <label class="choice-label">
+                <input type="checkbox" name="interests" value="travel" /> Travel
+              </label>
+              <label class="choice-label">
+                <input type="checkbox" name="interests" value="photography" />
+                Photography
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="group-title">Additional Information</p>
+
+          <div class="field-row">
+            <label for="bio">Tell us something about yourself</label>
+            <textarea
+              id="bio"
+              name="bio"
+              rows="4"
+              placeholder="Write a short summary..."
+            ></textarea>
+          </div>
+
+          <div class="field-row">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="usa">United States</option>
+              <option value="canada" selected>Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="germany">Germany</option>
+              <option value="japan">Japan</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob" />
+          </div>
+
+          <div class="field-row">
+            <label for="contact-time">Preferred contact time</label>
+            <input
+              type="time"
+              id="contact-time"
+              name="preferred_contact_time"
+            />
+          </div>
+
+          <div class="field-row">
+            <label for="service-rating"
+              >How much do you like our service?</label
+            >
+            <input
+              type="range"
+              id="service-rating"
+              name="service_rating"
+              min="0"
+              max="100"
+              step="10"
+              value="70"
+            />
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button type="submit">Create account</button>
+          <button type="button" disabled>Coming soon</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
